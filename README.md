@@ -21,17 +21,12 @@ Um sistema voltado para a biblioteca da Faculdade Senac que tem como objetivo a 
 
 # Relatórios das consultas
 
-Relatório 1: Todos os usuários com nome, telefone e email que pegaram o armário 14.
-
-Relatório 2: Todos os usuários que são alunos com nome, email e número do armário que pegaram armário em 21 de novembro.
-
-Relatório 3: Quantos armários foram pegos pelo tipo de usuário professor.
-
-Relatório 4: todos os usuários que pegaram armário entre 13h e 18h mostrando nome, tipo de usuário, email,  telefone, número do armário
-
-Relatório 5: Lista de todos os armários que foram alugados por usuários que tem o nome que começa com a letra P, mostrando nome e email.
-
-Relatório 6: Lista de alunos mostrando quanto tempo um aluno fica com um armário, nome, matrícula, e-mail e número do armário.
+- Relatório 1: Todos os usuários com nome, telefone e email que pegaram o armário 14.
+- Relatório 2: Todos os usuários que são alunos com nome, email e número do armário que pegaram armário em 21 de novembro.
+- Relatório 3: Quantos armários foram pegos pelo tipo de usuário professor.
+- Relatório 4: todos os usuários que pegaram armário entre 13h e 18h mostrando nome, tipo de usuário, email,  telefone, número do armário
+- Relatório 5: Lista de todos os armários que foram alugados por usuários que tem o nome que começa com a letra P, mostrando nome e email.
+- Relatório 6: Lista de alunos mostrando quanto tempo um aluno fica com um armário, nome, matrícula, e-mail e número do armário.
 
 Relatório 7: Lista de todos os armários que foram alugados por usuários que tem o nome que termina com a letra A, mostrando nome e matrícula.
 
