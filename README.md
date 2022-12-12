@@ -1,4 +1,4 @@
-# Projeto-BancoDados-Unikey
+# Projeto de Banco de dados do sistema Unikey
 Repositório do projeto de Banco de dados do Sistema Unikey
 
 # Descrição do Minimundo
