@@ -14,10 +14,10 @@ Um sistema voltado para a biblioteca da Faculdade Senac que tem como objetivo a 
 ![image](https://user-images.githubusercontent.com/96891482/207087095-2e0e9687-d811-4bbb-b898-c024783421a3.png)
 
 ## Tabelas
-Funcionario -> email, senha
-Usuario -> email, telefone, matricula, nome, tipo_user
-Alugar -> inicio_aluguel, fim_aluguel, usuario_email, armario_id_armario, funcionario_email
-armario -> id_armario, num_armario, status
+- Funcionario -> email, senha
+- Usuario -> email, telefone, matricula, nome, tipo_user
+- Alugar -> inicio_aluguel, fim_aluguel, usuario_email, armario_id_armario, funcionario_email
+- Armario -> id_armario, num_armario, status
 
 
 
