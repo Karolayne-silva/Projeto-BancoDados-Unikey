@@ -55,3 +55,59 @@ CREATE PROCEDURE pesquisarAluguelArmario(in numero int)
 delimiter ;
 
 -- call pesquisarAluguelArmario();
+
+
+delimiter // 
+CREATE PROCEDURE lista_alunos(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
+    BEGIN
+    SELECT * FROM usuario WHERE tipo_user = 'aluno';
+    END // 
+delimiter;
+
+-- call lista_aluno()
+
+
+delimiter //
+CREATE PROCEDURE lista_professores(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
+        BEGIN
+        SELECT * FROM usuario WHERE tipo_user = 'professor';
+        END;
+delimiter ; 
+
+-- call lista_professores()
+
+
+
+delimiter //
+CREATE PROCEDURE lista_funcionarios(IN email VARCHAR(35), IN senha VARCHAR(35) )
+    BEGIN
+    SELECT * FROM usuario WHERE tipo_user = 'funcionario';
+    END;
+delimiter ;
+
+-- call lista_funcionarios()
+
+
+
+delimiter //
+CREATE PROCEDURE busca_usuario(IN matricula INT)
+    BEGIN
+    SELECT * FROM usuario WHERE matricula = matricula;
+    END;
+delimiter ;
+
+-- call busca_usuario();
+
+
+
+delimiter //
+CREATE PROCEDURE atualiza_usuario(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
+    BEGIN
+    UPDATE usuario
+    SET email = email, telefone = telefone, nome = nome, tipo_user = tipo_user
+    WHERE matricula = matricula;
+    END;
+delimiter ; 
+
+-- call atualiza_usuario ();
+
