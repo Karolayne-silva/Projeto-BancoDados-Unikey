@@ -85,3 +85,18 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+DROP DATABASE unikey;
+
+-- alter table
+
+ALTER TABLE alugar MODIFY inicio_aluguel datetime(3);
+
+ALTER TABLE alugar MODIFY fim_aluguel datetime(3);
+
+ALTER TABLE usuario CHANGE COLUMN tipo_user tipo_usuario varchar(35);
+
+ALTER TABLE usuario MODIFY tipo_usuario varchar(30);
+
+ALTER TABLE usuario MODIFY nome varchar(40);
+
