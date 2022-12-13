@@ -11,7 +11,8 @@ Um sistema voltado para a biblioteca da Faculdade Senac que tem como objetivo a 
 
 # Modelo Lógico
 
-![image](https://user-images.githubusercontent.com/96891482/207087095-2e0e9687-d811-4bbb-b898-c024783421a3.png)
+![image](https://user-images.githubusercontent.com/96891482/207463758-30eeded6-de61-465c-9c82-c668a1c46c01.png)
+
 
 ## Tabelas
 - Funcionario -> email, senha
