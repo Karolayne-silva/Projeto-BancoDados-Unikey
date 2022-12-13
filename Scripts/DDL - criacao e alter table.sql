@@ -20,7 +20,7 @@ USE `unikey` ;
 CREATE TABLE IF NOT EXISTS `unikey`.`usuario` (
   `email` VARCHAR(35) NOT NULL,
   `telefone` INT NOT NULL,
-  `matricula` INT NULL,
+  `matricula` VARCHAR(35) NULL,
   `nome` VARCHAR(35) NOT NULL,
   `tipo_user` VARCHAR(35) NOT NULL,
   PRIMARY KEY (`email`),
@@ -85,6 +85,7 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
 
 DROP DATABASE unikey;
 
