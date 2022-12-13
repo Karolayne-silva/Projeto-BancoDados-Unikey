@@ -9,6 +9,7 @@ delimiter ;
 -- call atualizarTelefone();
 
 
+
 delimiter //
 CREATE PROCEDURE adicionarUser (in em varchar(35), in t int, in m varchar(35), in n varchar(35), in tu varchar(35))
 	BEGIN 
@@ -16,6 +17,7 @@ CREATE PROCEDURE adicionarUser (in em varchar(35), in t int, in m varchar(35), i
         (em, t, m, n, tu);
 	END //
 delimiter ;
+
 -- call adicionarUser();
 
 
@@ -58,56 +60,53 @@ delimiter ;
 
 
 delimiter // 
-CREATE PROCEDURE lista_alunos(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
+CREATE PROCEDURE lista_alunos()
     BEGIN
-    SELECT * FROM usuario WHERE tipo_user = 'aluno';
+		SELECT * FROM usuario WHERE tipo_user = 'aluno';
     END // 
-delimiter;
-
--- call lista_aluno()
-
-
-delimiter //
-CREATE PROCEDURE lista_professores(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
-        BEGIN
-        SELECT * FROM usuario WHERE tipo_user = 'professor';
-        END;
-delimiter ; 
-
--- call lista_professores()
-
-
-
-delimiter //
-CREATE PROCEDURE lista_funcionarios(IN email VARCHAR(35), IN senha VARCHAR(35) )
-    BEGIN
-    SELECT * FROM usuario WHERE tipo_user = 'funcionario';
-    END;
 delimiter ;
 
--- call lista_funcionarios()
+-- call lista_alunos();
+
+
+delimiter // 
+CREATE PROCEDURE selecionar_todos_usuarios()
+	BEGIN
+	  SELECT * FROM usuario;
+	END //
+delimiter ;
+
+-- call selecionar_todos_usuarios();
+
+
+delimiter //
+CREATE PROCEDURE lista_professores()
+	BEGIN
+		SELECT * FROM usuario WHERE tipo_user = 'professor';
+	END // 
+delimiter ; 
+
+-- call lista_professores();
+
+
+delimiter //
+CREATE PROCEDURE lista_funcionarios()
+	BEGIN
+		SELECT * FROM funcionario;
+    END //
+delimiter ;
+
+-- call lista_funcionarios();
 
 
 
 delimiter //
-CREATE PROCEDURE busca_usuario(IN matricula INT)
+CREATE PROCEDURE busca_usuario(IN matric varchar(35))
     BEGIN
-    SELECT * FROM usuario WHERE matricula = matricula;
-    END;
+		SELECT * FROM usuario WHERE matricula = matric;
+    END //
 delimiter ;
 
 -- call busca_usuario();
 
-
-
-delimiter //
-CREATE PROCEDURE atualiza_usuario(IN matricula INT, IN email VARCHAR(35), IN telefone INT, IN nome VARCHAR(35), IN tipo_user VARCHAR(35))
-    BEGIN
-    UPDATE usuario
-    SET email = email, telefone = telefone, nome = nome, tipo_user = tipo_user
-    WHERE matricula = matricula;
-    END;
-delimiter ; 
-
--- call atualiza_usuario ();
 
